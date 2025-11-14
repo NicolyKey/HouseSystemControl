@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS public.rooms (
+    id UUID PRIMARY KEY,
+    room_name VARCHAR(255) NOT NULL UNIQUE
+);
