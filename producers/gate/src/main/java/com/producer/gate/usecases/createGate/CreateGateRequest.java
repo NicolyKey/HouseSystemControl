@@ -1,5 +1,6 @@
 package com.producer.gate.usecases.createGate;
 
+
 import lombok.*;
 
 import java.util.UUID;

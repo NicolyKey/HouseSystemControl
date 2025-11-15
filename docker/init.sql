@@ -1,6 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS public;
 
 CREATE TABLE IF NOT EXISTS public.rooms (
-    id UUID PRIMARY KEY,
+    id bigint PRIMARY KEY,
     room_name VARCHAR(255) NOT NULL UNIQUE
 );

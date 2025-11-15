@@ -4,6 +4,7 @@ import com.producer.gate.entities.Gate;
 import com.producer.gate.entities.Room;
 import com.producer.gate.repositories.GateRepository;
 import com.producer.gate.repositories.RoomRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

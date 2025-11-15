@@ -28,6 +28,12 @@ public class GateController {
     private final CreateGateUseCase createGateUseCase;
     private final CreateTaskUseCase createTaskUseCase;
 
+    public GateController(GetGatesUseCase getGatesUseCase, CreateGateUseCase createGateUseCase, CreateTaskUseCase createTaskUseCase) {
+        this.getGatesUseCase = getGatesUseCase;
+        this.createGateUseCase = createGateUseCase;
+        this.createTaskUseCase = createTaskUseCase;
+    }
+
 
     @GetMapping
     @Operation(

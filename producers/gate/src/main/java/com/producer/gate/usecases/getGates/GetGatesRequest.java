@@ -8,7 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GetGatesRequest {
-
     private Integer page;
     private Integer pageSize;
 }

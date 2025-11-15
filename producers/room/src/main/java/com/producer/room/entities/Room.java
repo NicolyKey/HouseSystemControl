@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
+import java.util.List;
 
 @Entity
 @Table(name = "rooms", schema = "public")
@@ -15,15 +15,11 @@ import java.util.UUID;
 public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private Long id;
 
     @Column(name = "room_name", nullable = false, unique = true)
     private String roomName;
 
-    public static Room create(String roomName) {
-        return new Room(
-                UUID.randomUUID(),
-                roomName
-        );
-    }
+    @Column(name = "air_conditioning_id")
+    private List<Long> airId;
 }
